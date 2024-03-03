@@ -10,3 +10,21 @@ updates:
     schedule:
       interval: "weekly"
       day: "thursday"
+    groups:
+        # Specify a name for the group, which will be used in pull request titles
+        # and branch names
+        storybook-ecosystem:
+            # Define patterns to include dependencies in the group (based on
+            # dependency name)
+            patterns:
+                - 'storybook'
+                - '@storybook/*'
+                - '@types/storybook*'
+        # Specify a name for the group, which will be used in pull request titles
+        # and branch names
+        modern-web-ecosystem:
+            # Define patterns to include dependencies in the group (based on
+            # dependency name)
+            patterns:
+                - '@open-wc/*'
+                - '@web/*'
